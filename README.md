@@ -1,9 +1,14 @@
 # MJSlider
 A flat vertical slider for iOS/Swift 4
+<html
+img {
+width: 50%;
+}
 
 <img src="MJSlider.png" alt="Vertical Slider">
+</html>
 
-You can set/get:
+##Can set/get:
 
 - backgroundColor (UIColor), the color of the background
 - tintColor (UIColor), the color of the slider
