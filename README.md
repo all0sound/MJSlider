@@ -1,12 +1,7 @@
 # MJSlider
 A flat vertical slider for iOS/Swift 4
-<html
-img {
-width: 50%;
-}
 
 <img src="MJSlider.png" alt="Vertical Slider">
-</html>
 
 ##Can set/get:
 
