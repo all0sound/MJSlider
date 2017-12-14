@@ -85,6 +85,14 @@ public class MJSlider: UIControl {
         min = CGFloat(0)
         updateLayer()
     }
+    
+    override open func layoutSubviews() {
+        super.layoutSubviews()
+        max = bounds.maxY
+        min = bounds.minY
+        updateLayer()
+        
+    }
 
     private func updateLayer() {
         
@@ -129,8 +137,6 @@ public class MJSlider: UIControl {
     override public func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         lastTouchedLocation = touch.location(in: self)
         //necessary when adding constraints programmatically, AVF (otherwise frame is zero)
-        max = bounds.maxY
-        min = bounds.minY
 
 	return true
     }
