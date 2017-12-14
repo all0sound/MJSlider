@@ -128,7 +128,11 @@ public class MJSlider: UIControl {
 
     override public func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         lastTouchedLocation = touch.location(in: self)
-        return true
+        //necessary when adding constraints programmatically, AVF (otherwise frame is zero)
+        max = bounds.maxY
+        min = bounds.minY
+
+	return true
     }
     
     override public func continueTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
